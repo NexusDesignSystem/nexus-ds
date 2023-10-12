@@ -1,0 +1,56 @@
+{
+  "name": "@nexus-ds/system",
+  "version": "1.0.10",
+  "description": "nexusui system primitives",
+  "keywords": [
+    "system"
+  ],
+  
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "directory": "packages/core/system"
+  },
+  "bugs": {
+    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+  },
+  "scripts": {
+    "build": "tsup src !src/extend-variants.d.ts --dts",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "build:fast": "tsup src !src/extend-variants.d.ts",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "clean-package": "2.2.0",
+    "react": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json",
+  "tsup": {
+    "clean": true,
+    "target": "es2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  },
+  "dependencies": {
+    "@nexus-ds/system-rsc": "workspace:*",
+    "@react-aria/i18n": "^3.8.2",
+    "@react-aria/overlays": "^3.17.0"
+  }
+}

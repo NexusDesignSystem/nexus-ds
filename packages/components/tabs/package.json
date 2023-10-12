@@ -1,0 +1,69 @@
+{
+  "name": "@nexus-ds/tabs",
+  "version": "1.0.21",
+  "description": "Tabs organize content into multiple sections and allow users to navigate between them.",
+  "keywords": [
+    "tabs"
+  ],
+  
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "directory": "packages/components/tabs"
+  },
+  "bugs": {
+    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "framer-motion": ">=4.0.0"
+  },
+  "dependencies": {
+    "@nexus-ds/shared-utils": "workspace:*",
+    "@nexus-ds/react-utils": "workspace:*",
+    "@nexus-ds/system": "workspace:*",
+    "@nexus-ds/theme": "workspace:*",
+    "@nexus-ds/aria-utils": "workspace:*",
+    "@nexus-ds/framer-transitions": "workspace:*",
+    "@nexus-ds/use-is-mounted": "workspace:*",
+    "@nexus-ds/use-update-effect": "workspace:*",
+    "@react-aria/focus": "^3.14.1",
+    "@react-aria/interactions": "^3.18.0",
+    "@react-aria/tabs": "^3.7.0",
+    "@react-aria/utils": "^3.20.0",
+    "@react-stately/tabs": "^3.6.0",
+    "@react-types/shared": "^3.20.0",
+    "@react-types/tabs": "^3.3.2",
+    "scroll-into-view-if-needed": "3.0.10"
+  },
+  "devDependencies": {
+    "framer-motion": "^10.15.1",
+    "react-lorem-component": "0.13.0",
+    "@nexus-ds/card": "workspace:*",
+    "@nexus-ds/input": "workspace:*",
+    "@nexus-ds/test-utils": "workspace:*",
+    "@nexus-ds/button": "workspace:*",
+    "@nexus-ds/shared-icons": "workspace:*",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

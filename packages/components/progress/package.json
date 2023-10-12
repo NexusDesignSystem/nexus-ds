@@ -1,0 +1,56 @@
+{
+  "name": "@nexus-ds/progress",
+  "version": "1.0.21",
+  "description": "Progress bars show either determinate or indeterminate progress of an operation over time.",
+  "keywords": [
+    "progress"
+  ],
+  
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "directory": "packages/components/progress"
+  },
+  "bugs": {
+    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@nexus-ds/shared-utils": "workspace:*",
+    "@nexus-ds/react-utils": "workspace:*",
+    "@nexus-ds/use-is-mounted": "workspace:*",
+    "@nexus-ds/system": "workspace:*",
+    "@nexus-ds/theme": "workspace:*",
+    "@react-aria/i18n": "^3.8.2",
+    "@react-aria/progress": "^3.4.5",
+    "@react-aria/utils": "^3.20.0",
+    "@react-types/progress": "^3.4.3"
+  },
+  "devDependencies": {
+    "@nexus-ds/card": "workspace:*",
+    "@nexus-ds/chip": "workspace:*",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

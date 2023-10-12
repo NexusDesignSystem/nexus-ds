@@ -1,0 +1,62 @@
+{
+  "name": "@nexus-ds/dropdown",
+  "version": "1.1.10",
+  "description": "A dropdown displays a list of actions or options that a user can choose.",
+  "keywords": [
+    "dropdown"
+  ],
+  
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "directory": "packages/components/dropdown"
+  },
+  "bugs": {
+    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "framer-motion": ">=4.0.0"
+  },
+  "dependencies": {
+    "@nexus-ds/menu": "workspace:*",
+    "@nexus-ds/popover": "workspace:*",
+    "@nexus-ds/shared-utils": "workspace:*",
+    "@nexus-ds/react-utils": "workspace:*",
+    "@nexus-ds/system": "workspace:*",
+    "@nexus-ds/theme": "workspace:*",
+    "@react-aria/menu": "^3.10.2",
+    "@react-aria/utils": "^3.20.0",
+    "@react-stately/menu": "^3.5.5",
+    "@react-aria/focus": "^3.14.1",
+    "@react-types/menu": "^3.9.4"
+  },
+  "devDependencies": {
+    "@nexus-ds/button": "workspace:*",
+    "@nexus-ds/avatar": "workspace:*",
+    "@nexus-ds/user": "workspace:*",
+    "@nexus-ds/shared-icons": "workspace:*",
+    "framer-motion": "^10.15.1",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

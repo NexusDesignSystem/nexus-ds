@@ -1,0 +1,90 @@
+{
+  "name": "@nexus-ds/react",
+  "version": "1.1.13",
+  "description": "🚀 Beautiful and modern React UI library.",
+  
+  "keywords": [
+    "next",
+    "Nexus UI",
+    "components",
+    "modern components",
+    "react components",
+    "react ui"
+  ],
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "directory": "packages/core/react"
+  },
+  "bugs": {
+    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+  },
+  "scripts": {
+    "prebuild": "node src/scripts/prebuild.js",
+    "build": "tsup --dts",
+    "postbuild": "node src/scripts/postbuild.js",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "build:fast": "tsup",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "dependencies": {
+    "@nexus-ds/system": "workspace:*",
+    "@nexus-ds/theme": "workspace:*",
+    "@nexus-ds/accordion": "workspace:*",
+    "@nexus-ds/avatar": "workspace:*",
+    "@nexus-ds/badge": "workspace:*",
+    "@nexus-ds/button": "workspace:*",
+    "@nexus-ds/card": "workspace:*",
+    "@nexus-ds/chip": "workspace:*",
+    "@nexus-ds/checkbox": "workspace:*",
+    "@nexus-ds/code": "workspace:*",
+    "@nexus-ds/link": "workspace:*",
+    "@nexus-ds/pagination": "workspace:*",
+    "@nexus-ds/radio": "workspace:*",
+    "@nexus-ds/snippet": "workspace:*",
+    "@nexus-ds/spinner": "workspace:*",
+    "@nexus-ds/switch": "workspace:*",
+    "@nexus-ds/tooltip": "workspace:*",
+    "@nexus-ds/user": "workspace:*",
+    "@nexus-ds/progress": "workspace:*",
+    "@nexus-ds/input": "workspace:*",
+    "@nexus-ds/popover": "workspace:*",
+    "@nexus-ds/dropdown": "workspace:*",
+    "@nexus-ds/image": "workspace:*",
+    "@nexus-ds/modal": "workspace:*",
+    "@nexus-ds/navbar": "workspace:*",
+    "@nexus-ds/table": "workspace:*",
+    "@nexus-ds/spacer": "workspace:*",
+    "@nexus-ds/divider": "workspace:*",
+    "@nexus-ds/kbd": "workspace:*",
+    "@nexus-ds/tabs": "workspace:*",
+    "@nexus-ds/skeleton": "workspace:*",
+    "@nexus-ds/scroll-shadow": "workspace:*",
+    "@nexus-ds/select": "workspace:*",
+    "@nexus-ds/listbox": "workspace:*",
+    "@nexus-ds/menu": "workspace:*",
+    "@nexus-ds/ripple": "workspace:*",
+    "@react-aria/visually-hidden": "^3.8.4"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "framer-motion": ">=4.0.0"
+  },
+  "devDependencies": {
+    "react": "^18.0.0",
+    "clean-package": "2.2.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}
