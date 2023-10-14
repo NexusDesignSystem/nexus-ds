@@ -3,8 +3,9 @@ import {green} from "./green";
 import {pink} from "./pink";
 import {purple} from "./purple";
 import {red} from "./red";
+import {orange} from "./orange";
 import {yellow} from "./yellow";
-import {cyan} from "./cyan";
+import {teal} from "./teal";
 import {zinc} from "./zinc";
 
 export const commonColors = {
@@ -15,8 +16,9 @@ export const commonColors = {
   pink,
   purple,
   red,
+  orange,
   yellow,
-  cyan,
+  teal,
   zinc,
 };
 

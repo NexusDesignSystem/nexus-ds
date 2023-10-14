@@ -113,6 +113,26 @@ export const CommonColors = {
         items: getCommonItems([commonColors.white, commonColors.black]),
       },
       {
+        title: "Red",
+        items: getCommonItems([...Object.values(commonColors.red)]),
+      },
+      {
+        title: "Orange",
+        items: getCommonItems([...Object.values(commonColors.orange)]),
+      },
+      {
+        title: "Yellow",
+        items: getCommonItems([...Object.values(commonColors.yellow)]),
+      },
+      {
+        title: "Green",
+        items: getCommonItems([...Object.values(commonColors.green)]),
+      },
+      {
+        title: "Teal",
+        items: getCommonItems([...Object.values(commonColors.teal)]),
+      },
+      {
         title: "Blue",
         items: getCommonItems([...Object.values(commonColors.blue)]),
       },
@@ -121,24 +141,8 @@ export const CommonColors = {
         items: getCommonItems([...Object.values(commonColors.purple)]),
       },
       {
-        title: "Green",
-        items: getCommonItems([...Object.values(commonColors.green)]),
-      },
-      {
-        title: "Red",
-        items: getCommonItems([...Object.values(commonColors.red)]),
-      },
-      {
         title: "Pink",
         items: getCommonItems([...Object.values(commonColors.pink)]),
-      },
-      {
-        title: "Yellow",
-        items: getCommonItems([...Object.values(commonColors.yellow)]),
-      },
-      {
-        title: "Cyan",
-        items: getCommonItems([...Object.values(commonColors.cyan)]),
       },
     ],
   },
