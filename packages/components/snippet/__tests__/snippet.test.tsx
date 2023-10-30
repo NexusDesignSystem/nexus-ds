@@ -18,9 +18,7 @@ describe("Snippet", () => {
   });
 
   it("should include the code", () => {
-    const wrapper = render(
-      <Snippet data-testid="code-test">npm install @nexus-ds/react</Snippet>,
-    );
+    const wrapper = render(<Snippet data-testid="code-test">npm install @nexus-ds/react</Snippet>);
 
     expect(wrapper.getByTestId("code-test")).toHaveTextContent("npm install @nexus-ds/react");
   });

@@ -1,8 +1,4 @@
-import type {
-  AccordionItemVariantProps,
-  AccordionItemSlots,
-  SlotsToClasses,
-} from "@nexus-ds/theme";
+import type {AccordionItemVariantProps, AccordionItemSlots, SlotsToClasses} from "@nexus-ds/theme";
 
 import {ItemProps, BaseItem} from "@nexus-ds/aria-utils";
 import {FocusableProps, PressEvents} from "@react-types/shared";

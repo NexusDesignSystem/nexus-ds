@@ -1550,6 +1550,58 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0
 
+  packages/components/sidebar:
+    dependencies:
+      '@nexus-ds/button':
+        specifier: workspace:*
+        version: link:../button
+      '@nexus-ds/dropdown':
+        specifier: workspace:*
+        version: link:../dropdown
+      '@nexus-ds/menu':
+        specifier: workspace:*
+        version: link:../menu
+      '@nexus-ds/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@nexus-ds/shared-icons':
+        specifier: workspace:*
+        version: link:../../utilities/shared-icons
+      '@nexus-ds/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      '@nexus-ds/system':
+        specifier: workspace:*
+        version: link:../../core/system
+      '@nexus-ds/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+      '@react-aria/focus':
+        specifier: ^3.14.1
+        version: 3.14.1(react@18.2.0)
+      '@react-aria/interactions':
+        specifier: ^3.18.0
+        version: 3.18.0(react@18.2.0)
+      '@react-aria/utils':
+        specifier: ^3.20.0
+        version: 3.20.0(react@18.2.0)
+      '@react-types/checkbox':
+        specifier: ^3.5.1
+        version: 3.5.1(react@18.2.0)
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@nexus-ds/avatar':
+        specifier: workspace:*
+        version: link:../avatar
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+
   packages/components/skeleton:
     dependencies:
       '@nexus-ds/react-utils':
