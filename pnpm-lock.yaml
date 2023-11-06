@@ -150,7 +150,7 @@ importers:
         version: 4.0.2(eslint@7.32.0)(webpack@5.88.2)
       eslint-plugin-import:
         specifier: ^2.26.0
-        version: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@3.6.1)(eslint@7.32.0)
+        version: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@2.7.1)(eslint@7.32.0)
       eslint-plugin-jest:
         specifier: ^24.3.6
         version: 24.7.0(@typescript-eslint/eslint-plugin@5.62.0)(eslint@7.32.0)(typescript@4.9.5)
@@ -281,49 +281,49 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0
       '@nexus-ds/aria-utils':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/utilities/aria-utils
       '@nexus-ds/badge':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/components/badge
       '@nexus-ds/code':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/components/code
       '@nexus-ds/divider':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/components/divider
       '@nexus-ds/kbd':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/components/kbd
       '@nexus-ds/react':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/core/react
       '@nexus-ds/shared-icons':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/utilities/shared-icons
       '@nexus-ds/shared-utils':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/utilities/shared-utils
       '@nexus-ds/skeleton':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/components/skeleton
       '@nexus-ds/spacer':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/components/spacer
       '@nexus-ds/spinner':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/components/spinner
       '@nexus-ds/theme':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/core/theme
       '@nexus-ds/use-clipboard':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/hooks/use-clipboard
       '@nexus-ds/use-infinite-scroll':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/hooks/use-infinite-scroll
       '@nexus-ds/use-is-mobile':
-        specifier: workspace:*
+        specifier: ^1.1.0
         version: link:../../packages/hooks/use-is-mobile
       '@radix-ui/react-scroll-area':
         specifier: ^1.0.5
@@ -15176,7 +15176,7 @@ packages:
     dependencies:
       confusing-browser-globals: 1.0.11
       eslint: 7.32.0
-      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@3.6.1)(eslint@7.32.0)
+      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@2.7.1)(eslint@7.32.0)
       object.assign: 4.1.4
       object.entries: 1.1.7
     dev: true
@@ -15209,7 +15209,7 @@ packages:
     dependencies:
       eslint: 7.32.0
       eslint-config-airbnb-base: 14.2.1(eslint-plugin-import@2.28.1)(eslint@7.32.0)
-      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@3.6.1)(eslint@7.32.0)
+      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@2.7.1)(eslint@7.32.0)
       eslint-plugin-jsx-a11y: 6.7.1(eslint@7.32.0)
       eslint-plugin-react: 7.33.2(eslint@7.32.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@7.32.0)
@@ -15232,7 +15232,7 @@ packages:
       eslint: 7.32.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.28.1)(eslint@7.32.0)
-      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@3.6.1)(eslint@7.32.0)
+      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@2.7.1)(eslint@7.32.0)
       eslint-plugin-jsx-a11y: 6.7.1(eslint@7.32.0)
       eslint-plugin-react: 7.33.2(eslint@7.32.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@7.32.0)
@@ -15281,7 +15281,7 @@ packages:
       confusing-browser-globals: 1.0.11
       eslint: 7.32.0
       eslint-plugin-flowtype: 5.10.0(eslint@7.32.0)
-      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@3.6.1)(eslint@7.32.0)
+      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@2.7.1)(eslint@7.32.0)
       eslint-plugin-jest: 24.7.0(@typescript-eslint/eslint-plugin@5.62.0)(eslint@7.32.0)(typescript@4.9.5)
       eslint-plugin-jsx-a11y: 6.7.1(eslint@7.32.0)
       eslint-plugin-react: 7.33.2(eslint@7.32.0)
@@ -15322,7 +15322,7 @@ packages:
     dependencies:
       debug: 4.3.4
       eslint: 7.32.0
-      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@3.6.1)(eslint@7.32.0)
+      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@2.7.1)(eslint@7.32.0)
       glob: 7.2.3
       is-glob: 4.0.3
       resolve: 1.22.4
@@ -15342,7 +15342,7 @@ packages:
       enhanced-resolve: 5.15.0
       eslint: 7.32.0
       eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@7.32.0)
-      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@3.6.1)(eslint@7.32.0)
+      eslint-plugin-import: 2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@2.7.1)(eslint@7.32.0)
       fast-glob: 3.3.1
       get-tsconfig: 4.7.0
       is-core-module: 2.13.0
@@ -15453,7 +15453,7 @@ packages:
       string-natural-compare: 3.0.1
     dev: true
 
-  /eslint-plugin-import@2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@3.6.1)(eslint@7.32.0):
+  /eslint-plugin-import@2.28.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@2.7.1)(eslint@7.32.0):
     resolution: {integrity: sha512-9I9hFlITvOV55alzoKBI+K9q74kv0iKMeY6av5+umsNwayt59fz692daGyjR+oStBQgx6nwR9rXldDev3Clw+A==}
     engines: {node: '>=4'}
     peerDependencies:
