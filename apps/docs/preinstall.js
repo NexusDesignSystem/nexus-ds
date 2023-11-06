@@ -22,16 +22,6 @@ fs.readFile("./package.json", "utf8", function (err, data) {
 
   let packageJson = JSON.parse(data);
 
-  Object.keys(packageJson.dependencies).forEach((pkg) => {
-    // Check if the package is in the @nexus-ds namespace and has "workspace:*" as its version
-    if (pkg.startsWith("@nexus-ds/") && packageJson.dependencies[pkg] === "workspace:*") {
-      // Get the latest version of the package under the specified tag
-      const latestVersion = execSync(`npm show ${pkg}@dev-v2 version`, {encoding: "utf8"}).trim();
-
-      // Replace the version in the package.json file
-      packageJson.dependencies[pkg] = latestVersion;
-    }
-  });
 
   // // Write the changes back to the package.json file
   fs.writeFile("./package.json", JSON.stringify(packageJson, null, 2), "utf8", function (err) {
