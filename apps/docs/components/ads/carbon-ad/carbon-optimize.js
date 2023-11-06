@@ -45,12 +45,7 @@ export default {
       return isVisible;
     };
 
-    if (!document.hidden) {
-      if (typeof _carbonads !== "undefined" && isElementInViewport("#carbonads")) {
-        // eslint-disable-next-line no-undef
-        _carbonads.refresh();
-      }
-    }
+   
   },
   init: function () {
     if (this.isRefreshAble()) {
