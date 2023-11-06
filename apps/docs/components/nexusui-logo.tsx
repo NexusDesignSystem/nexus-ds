@@ -19,13 +19,15 @@ export const SmallLogo: React.FC<LogoProps> = ({
   ...props
 }) => (
   <img
-    src="https://avatars.githubusercontent.com/u/141403672"
+    src="https://avatars.githubusercontent.com/u/141403672?s=50&v=4"
   />
 );
 
 export const LargeLogo: React.FC<LogoProps> = ({auto, className, ...props}) => (
   <img
-  src="https://storybook-nexus.vercel.app/dark-logo.png"
+  src="https://nexus-design-system.vercel.app/large-logo.png"
+  width={48}
+  
   />
 );
 
