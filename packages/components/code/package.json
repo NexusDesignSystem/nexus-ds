@@ -1,6 +1,6 @@
 {
   "name": "@nexus-ds/code",
-  "version": "1.0.19",
+  "version": "1.1.0",
   "description": "Code is a component used to display inline code.",
   "keywords": [
     "code"
@@ -16,11 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "url": "git+https://github.com/NexusDesignSystem/nexus-ds.git",
     "directory": "packages/components/code"
   },
   "bugs": {
-    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+    "url": "https://github.com/NexusDesignSystem/nexus-ds/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

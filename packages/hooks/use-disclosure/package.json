@@ -1,6 +1,6 @@
 {
   "name": "@nexus-ds/use-disclosure",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "The hook in charge of managing modals",
   "keywords": [
     "use-disclosure"
@@ -16,11 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "url": "git+https://github.com/NexusDesignSystem/nexus-ds.git",
     "directory": "packages/hooks/use-disclosure"
   },
   "bugs": {
-    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+    "url": "https://github.com/NexusDesignSystem/nexus-ds/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

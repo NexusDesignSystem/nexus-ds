@@ -1,6 +1,6 @@
 {
   "name": "@nexus-ds/system",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "description": "nexusui system primitives",
   "keywords": [
     "system"
@@ -16,11 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "url": "git+https://github.com/NexusDesignSystem/nexus-ds.git",
     "directory": "packages/core/system"
   },
   "bugs": {
-    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+    "url": "https://github.com/NexusDesignSystem/nexus-ds/issues"
   },
   "scripts": {
     "build": "tsup src !src/extend-variants.d.ts --dts",

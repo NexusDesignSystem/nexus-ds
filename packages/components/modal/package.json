@@ -1,6 +1,6 @@
 {
   "name": "@nexus-ds/modal",
-  "version": "1.0.23",
+  "version": "1.1.0",
   "description": "Displays a dialog with a custom content that requires attention or provides additional information.",
   "keywords": [
     "modal"
@@ -16,11 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "url": "git+https://github.com/NexusDesignSystem/nexus-ds.git",
     "directory": "packages/components/modal"
   },
   "bugs": {
-    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+    "url": "https://github.com/NexusDesignSystem/nexus-ds/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

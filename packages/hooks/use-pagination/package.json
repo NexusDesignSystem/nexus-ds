@@ -1,6 +1,6 @@
 {
   "name": "@nexus-ds/use-pagination",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "State management hook for Pagination component, it lets you manage pagination with controlled and uncontrolled state",
   "keywords": [
     "use-pagination"
@@ -16,11 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "url": "git+https://github.com/NexusDesignSystem/nexus-ds.git",
     "directory": "packages/hooks/use-pagination"
   },
   "bugs": {
-    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+    "url": "https://github.com/NexusDesignSystem/nexus-ds/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

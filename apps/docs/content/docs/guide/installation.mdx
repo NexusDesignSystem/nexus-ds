@@ -1,0 +1,218 @@
+---
+title: Installation
+description: Get started with Nexus Design System in the official documentation, and learn more about all our features!
+---
+
+# Installation
+
+Requirements:
+
+- [React 18](https://reactjs.org/) or later
+- [Tailwind CSS 3](https://tailwindcss.com/) or later
+- [Framer Motion 4](https://www.framer.com/motion/) or later
+
+---
+
+<CarbonAd />
+
+To use Nexus Design System in your project, you need to follow the following steps:
+
+## Global Installation
+
+The easiest way to get started with Nexus Design System is to use the global installation. Which means
+that all the components are imported from a single package.
+
+Follow the steps below to install all Nexus Design System components:
+
+<Steps>
+
+### Install Packages
+
+To install Nexus Design System, run one of the following commands in your terminal:
+
+<PackageManagers
+  commands={{
+    npm: "npm i @nexus-ds/react framer-motion",
+    yarn: "yarn add @nexus-ds/react framer-motion",
+    pnpm: "pnpm add @nexus-ds/react framer-motion",
+  }}
+/>
+
+### Tailwind CSS Setup
+
+Nexus Design System is built on top of Tailwind CSS, so you need to install Tailwind CSS first. You can follow the official
+[installation guide](https://tailwindcss.com/docs/installation) to install Tailwind CSS. Then you need to add
+the following code to your `tailwind.config.js` file:
+
+```js {8,13-14}
+// tailwind.config.js
+const {nexusui} = require("@nexus-ds/react");
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    // ...
+    "./node_modules/@nexus-ds/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  darkMode: "class",
+  plugins: [nexusui()],
+};
+```
+
+### Provider Setup
+
+It is essential to add the `NexusUIProvider` at the `root` of your application.
+
+```jsx
+import * as React from "react";
+
+// 1. import `NexusUIProvider` component
+import {NexusUIProvider} from "@nexus-ds/react";
+
+function App() {
+  // 2. Wrap NexusUIProvider at the root of your app
+  return (
+    <NexusUIProvider>
+      <YourApplication />
+    </NexusUIProvider>
+  );
+}
+```
+
+### Setup pnpm (optional)
+
+If you are using pnpm, you need to add the following code to your `.npmrc` file:
+
+```bash
+public-hoist-pattern[]=*@nexus-ds/*
+```
+
+After modfiying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+
+</Steps>
+
+## Individual Installation
+
+Nexus Design System is also available as individual packages. You can install each package separately. This
+is useful if you want to reduce the size of your CSS bundle as it will only include styles for the components
+you're actually using.
+
+> **Note**: JavaScript bundle size will not change due to tree shaking support in Nexus Design System.
+
+Follow the steps below to install each package separately:
+
+<Steps>
+
+### Install Core Packages
+
+Although you can install each package separately, you need to install the core packages first
+to ensure that all components work correctly.
+
+Run one of the following commands in your terminal to install the core packages:
+
+<PackageManagers
+  commands={{
+    npm: "npm i @nexus-ds/theme @nexus-ds/system framer-motion",
+    yarn: "yarn add @nexus-ds/theme @nexus-ds/system framer-motion",
+    pnpm: "pnpm add @nexus-ds/theme @nexus-ds/system framer-motion",
+  }}
+/>{" "}
+
+### Install Component
+
+Now, let's install the component you want to use. For example, if you want to use the
+[Button](/docs/components/button) component, you need to run one of the following commands
+in your terminal:
+
+<PackageManagers
+  commands={{
+    npm: "npm i @nexus-ds/button",
+    yarn: "yarn add @nexus-ds/button",
+    pnpm: "pnpm add @nexus-ds/button",
+  }}
+/>
+
+### Tailwind CSS Setup
+
+TailwindCSS setup changes a bit when you use individual packages. You only need to add the
+styles of the components your using to your `tailwind.config.js` file. For example, for the
+[Button](/docs/components/button) component, you need to add the following code to your
+`tailwind.config.js` file:
+
+```js {8,10,16}
+// tailwind.config.js
+const {nexusui} = require("@nexus-ds/theme");
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    // single component styles
+    "./node_modules/@nexus-ds/theme/dist/components/button.js", 
+    // or you can use a glob pattern (multiple component styles)
+    './node_modules/@nexus-ds/theme/dist/components/(button|snippet|code|input).js'
+  ],
+  theme: {
+    extend: {},
+  },
+  darkMode: "class",
+  plugins: [nexusui()],
+};
+```
+
+### Provider Setup
+
+It is essential to add the `NexusUIProvider` at the `root` of your application.
+
+```jsx
+import * as React from "react";
+
+// 1. import `NexusUIProvider` component
+import {NexusUIProvider} from "@nexus-ds/system";
+
+function App() {
+  // 2. Wrap NexusUIProvider at the root of your app
+  return (
+    <NexusUIProvider>
+      <YourApplication />
+    </NexusUIProvider>
+  );
+}
+```
+
+### Use the Component
+
+Now, you can use the component you installed in your application:
+
+```jsx
+import * as React from "react";
+import {Button} from "@nexus-ds/button";
+
+function App() {
+  return (
+    <Button>Press me</Button>
+  );
+}
+```
+
+
+### Setup pnpm (optional)
+
+If you are using pnpm, you need to add the following code to your `.npmrc` file:
+
+```bash
+public-hoist-pattern[]=*@nexus-ds/*
+```
+
+After modfiying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+
+</Steps>
+
+
+## Framework Guides
+
+Nexus Design System UI is compatible with your preferred framework. We have compiled comprehensive, step-by-step tutorials for the following frameworks:
+
+<Frameworks />

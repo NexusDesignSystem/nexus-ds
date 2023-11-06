@@ -9,7 +9,7 @@ export default {
   component: User,
 } as Meta<typeof User>;
 
-const url = "https://avatars.githubusercontent.com/u/30373425?v=4";
+const url = "https://avatars.githubusercontent.com/u/87353374?v=4";
 
 export const Default = {
   args: {

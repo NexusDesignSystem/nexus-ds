@@ -419,7 +419,7 @@ const WithAvatarUserTemplate = (args: NavbarProps) => {
                 className="transition-transform"
                 color="secondary"
                 size="sm"
-                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                src="https://i.pravatar.cc/150?img=27"
               />
             </DropdownTrigger>
             <DropdownMenu aria-label="Profile Actions" color="secondary">
@@ -531,7 +531,7 @@ const WithSearchInputTemplate = (args: NavbarProps) => {
                 className="transition-transform"
                 color="secondary"
                 size="sm"
-                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                src="https://i.pravatar.cc/150?img=27"
               />
             </DropdownTrigger>
             <DropdownMenu aria-label="Profile Actions" color="secondary">

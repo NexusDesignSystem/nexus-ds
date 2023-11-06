@@ -79,7 +79,7 @@ const rows = [
   },
   {
     key: "2",
-    name: "Zoey Lang",
+    name: "Nanami Kento",
     role: "Technical Lead",
     status: "Paused",
   },
@@ -133,7 +133,7 @@ const StaticTemplate = (args: TableProps) => (
         <TableCell>Active</TableCell>
       </TableRow>
       <TableRow key="2">
-        <TableCell>Zoey Lang</TableCell>
+        <TableCell>Nanami Kento</TableCell>
         <TableCell>Technical Lead</TableCell>
         <TableCell>Paused</TableCell>
       </TableRow>
@@ -192,17 +192,17 @@ const CustomCellTemplate = (args: TableProps) => {
       team: "Management",
       status: "active",
       age: "29",
-      avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+      avatar: "https://i.pravatar.cc/150?img=33",
       email: "tony.reichert@example.com",
     },
     {
       id: 2,
-      name: "Zoey Lang",
+      name: "Nanami Kento",
       role: "Technical Lead",
       team: "Development",
       status: "paused",
       age: "25",
-      avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
+      avatar: "https://i.pravatar.cc/150?img=27",
       email: "zoey.lang@example.com",
     },
     {
@@ -212,7 +212,7 @@ const CustomCellTemplate = (args: TableProps) => {
       team: "Development",
       status: "active",
       age: "22",
-      avatar: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+      avatar: "https://i.pravatar.cc/150?img=23",
       email: "jane.fisher@example.com",
     },
     {
@@ -332,17 +332,17 @@ const CustomCellWithClassnamesTemplate = (args: TableProps) => {
       team: "Management",
       status: "active",
       age: "29",
-      avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+      avatar: "https://i.pravatar.cc/150?img=33",
       email: "tony.reichert@example.com",
     },
     {
       id: 2,
-      name: "Zoey Lang",
+      name: "Nanami Kento",
       role: "Technical Lead",
       team: "Development",
       status: "paused",
       age: "25",
-      avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
+      avatar: "https://i.pravatar.cc/150?img=27",
       email: "zoey.lang@example.com",
     },
     {
@@ -352,7 +352,7 @@ const CustomCellWithClassnamesTemplate = (args: TableProps) => {
       team: "Development",
       status: "active",
       age: "22",
-      avatar: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+      avatar: "https://i.pravatar.cc/150?img=23",
       email: "jane.fisher@example.com",
     },
     {

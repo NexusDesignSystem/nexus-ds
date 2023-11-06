@@ -113,7 +113,7 @@ export const CustomSizeImg = {
   args: {
     ...defaultProps,
     src: "https://i.pravatar.cc/300?u=a042581f4e29026705d",
-    name: "Junior",
+    name: DeltaS,
     classNames: {
       base: "w-32 h-32 text-base",
     },
@@ -141,7 +141,7 @@ export const InitialsFallback = {
   args: {
     ...defaultProps,
     src: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6",
-    name: "Junior",
+    name: DeltaS,
     showFallback: true,
   },
 };
@@ -161,7 +161,7 @@ export const BrokenImage = {
   args: {
     ...defaultProps,
     src: "https://images.unsplash.com/broken-image",
-    name: "Junior",
+    name: DeltaS,
     showFallback: true,
   },
 };

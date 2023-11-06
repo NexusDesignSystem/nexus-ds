@@ -1,6 +1,6 @@
 {
   "name": "@nexus-ds/react-rsc-utils",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "A set of utilities for react compatible with RSC",
   "keywords": [
     "react-rsc-utils"
@@ -20,11 +20,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "url": "git+https://github.com/NexusDesignSystem/nexus-ds.git",
     "directory": "packages/utilities/react-rsc-utils"
   },
   "bugs": {
-    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+    "url": "https://github.com/NexusDesignSystem/nexus-ds/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

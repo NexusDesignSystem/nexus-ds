@@ -106,7 +106,7 @@ const WithFooterTemplate = (args: CardProps) => (
         alt="nexusui logo"
         height={34}
         radius="lg"
-        src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+        src="https://avatars.githubusercontent.com/u/141403672?s=200&v=4"
         width={34}
       />
       <div className="flex flex-col">
@@ -115,7 +115,7 @@ const WithFooterTemplate = (args: CardProps) => (
       </div>
     </CardHeader>
     <CardBody className="py-2">
-      <p>Make beautiful websites regardless of your design experience.</p>
+      <p>Design beautiful websites effortlessly, regardless of your design experience.</p>
     </CardBody>
     <CardFooter>
       <Link isExternal showAnchorIcon href="https://github.com/nexus-ds/nexusui">
@@ -164,7 +164,7 @@ const WithAbsImgHeaderFooterTemplate = (args: CardProps) => (
     />
     <CardFooter className="justify-between absolute bottom-0 z-10">
       <div>
-        <p className="text-xs text-black/80">Available soon.</p>
+        <p className="text-xs text-black/80">Depths of Cyan.</p>
         <p className="text-xs text-black/80">Get notified.</p>
       </div>
       <Button className="text-tiny" color="primary" radius="full" size="sm">
@@ -221,7 +221,7 @@ const CoverImgTemplate = (args: CardProps) => (
       />
       <CardFooter className="absolute bg-white/30 bottom-0 border-t border-slate-300 z-10 justify-between">
         <div>
-          <p className="text-black text-xs">Available soon.</p>
+          <p className="text-black text-xs">Depths of Cyan.</p>
           <p className="text-black text-xs">Get notified.</p>
         </div>
         <Button color="secondary" radius="full" size="sm" variant="flat">
@@ -262,7 +262,7 @@ const CenterImgTemplate = (args: CardProps) => (
     <CardHeader className="pb-0 pt-2 px-4 flex-col !items-start">
       <p className="text-xs uppercase font-bold">Daily Mix</p>
       <small className="text-default-500">12 Tracks</small>
-      <h4 className="font-bold text-lg">Frontend Radio</h4>
+      <h4 className="font-bold text-lg">Jai Mata Di Bol</h4>
     </CardHeader>
     <CardBody className="overflow-visible py-2">
       <Image

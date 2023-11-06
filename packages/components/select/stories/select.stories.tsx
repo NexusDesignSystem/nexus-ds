@@ -123,7 +123,7 @@ const usersData: User[] = [
   },
   {
     id: 2,
-    name: "Zoey Lang",
+    name: "Nanami Kento",
     role: "Tech Lead",
     team: "Development",
     status: "paused",

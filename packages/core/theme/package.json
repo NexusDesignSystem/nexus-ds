@@ -1,6 +1,6 @@
 {
   "name": "@nexus-ds/theme",
-  "version": "1.2.0",
+  "version": "1.1.0",
   "description": "The default theme for nexusui components",
   "keywords": [
     "theme",
@@ -28,11 +28,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "url": "git+https://github.com/NexusDesignSystem/nexus-ds.git",
     "directory": "packages/core/theme"
   },
   "bugs": {
-    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+    "url": "https://github.com/NexusDesignSystem/nexus-ds/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

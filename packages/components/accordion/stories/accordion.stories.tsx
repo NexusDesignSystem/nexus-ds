@@ -103,7 +103,7 @@ const TemplateWithStartContent = (args: AccordionProps) => (
           isBordered
           color="primary"
           radius="lg"
-          src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+          src="https://i.pravatar.cc/150?img=33"
         />
       }
       subtitle="4 unread messages"
@@ -119,7 +119,7 @@ const TemplateWithStartContent = (args: AccordionProps) => (
           isBordered
           color="success"
           radius="lg"
-          src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+          src="https://i.pravatar.cc/150?img=27"
         />
       }
       subtitle="3 incompleted steps"
@@ -129,13 +129,13 @@ const TemplateWithStartContent = (args: AccordionProps) => (
     </AccordionItem>
     <AccordionItem
       key="3"
-      aria-label="Zoey Lang"
+      aria-label="Nanami Kento"
       startContent={
         <Avatar
           isBordered
           color="warning"
           radius="lg"
-          src="https://i.pravatar.cc/150?u=a04258114e29026702d"
+          src="https://i.pravatar.cc/150?img=23"
         />
       }
       subtitle={
@@ -143,7 +143,7 @@ const TemplateWithStartContent = (args: AccordionProps) => (
           2 issues to&nbsp;<p className="text-primary">fix now</p>
         </p>
       }
-      title="Zoey Lang"
+      title="Nanami Kento"
     >
       {defaultContent}
     </AccordionItem>

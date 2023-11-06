@@ -1,0 +1,99 @@
+---
+title: Vite
+description: How to use Nexus Design System with Vite
+---
+
+# Vite
+
+Requirements:
+
+- [Vite 2](https://vitejs.dev/) or later
+- [React 18](https://reactjs.org/) or later
+- [Tailwind CSS 3](https://tailwindcss.com/docs/guides/vite#react) or later
+- [Framer Motion 4](https://www.framer.com/motion/) or later
+
+------
+
+<CarbonAd />
+
+To use Nexus Design System in your Vite project, you need to follow the following steps:
+
+<Steps>
+
+### Installation
+
+In your Vite React project, run one of the following command to install nexus:
+
+<PackageManagers
+  commands={{
+    npm: 'npm i @nexus-ds/react framer-motion',
+    yarn: 'yarn add @nexus-ds/react framer-motion',
+    pnpm: 'pnpm add @nexus-ds/react framer-motion',
+  }}
+/>
+
+### Tailwind CSS Setup
+
+Nexus Design System is built on top of Tailwind CSS, so you need to install Tailwind CSS first. You can follow the official
+[installation guide](https://tailwindcss.com/docs/guides/vite#react) to install Tailwind CSS. Then you need to add 
+the following code to your `tailwind.config.js` file:
+
+
+```js {8,13-14}
+// tailwind.config.js
+const { nexusui } = require("@nexus-ds/react");
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    // ...
+    "./node_modules/@nexus-ds/theme/dist/**/*.{js,ts,jsx,tsx}"
+  ],
+  theme: {
+    extend: {},
+  },
+  darkMode: "class",
+  plugins: [nexusui()]
+}
+```
+
+### Provider Setup
+
+After installing Nexus Design System, you need to set up the `NexusUIProvider` at the `root` of your application.
+
+Go to the src directory and inside `main.jsx` or `main.tsx`, wrap `NexusUIProvider` around App:
+
+```jsx
+// main.tsx or main.jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import {NexusUIProvider} from '@nexus-ds/react'
+import App from './App'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <NexusUIProvider>
+      <App />
+    </NexusUIProvider>
+  </React.StrictMode>,
+)
+```
+
+### Setup pnpm (optional)
+
+If you are using pnpm, you need to add the following code to your `.npmrc` file:
+
+```bash
+public-hoist-pattern[]=*@nexus-ds/*
+```
+
+After modfiying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+
+</Steps>
+
+<Blockquote
+ color="warning"
+>
+  It is only compatible with React 18 or later. 
+</Blockquote>

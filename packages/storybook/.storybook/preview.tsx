@@ -23,7 +23,7 @@ const decorators: Preview['decorators'] = [
 
   const commonTheme = {
     brandTitle: "Nexus Design System",
-    brandUrl: "https://github.com/NexusDesignSystem/nexusUI",
+    brandUrl: "https://github.com/NexusDesignSystem/nexus-ds",
     brandTarget: "_self",
   }
 

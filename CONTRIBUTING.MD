@@ -1,4 +1,4 @@
-# Nexus Design System Contributing Guide
+# Nexus Design System Development Guide
 
 Hello!, I am very excited that you are interested in contributing with Nexus Design System. However, before submitting your contribution, be sure to take a moment and read the following guidelines.
 

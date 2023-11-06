@@ -471,7 +471,7 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
             className="transition-transform"
             color="secondary"
             size="md"
-            src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+            src="https://i.pravatar.cc/150?img=27"
           />
         </DropdownTrigger>
         <DropdownMenu aria-label="Profile Actions" color="secondary" variant={variant}>
@@ -498,7 +498,7 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
               isBordered: true,
               color: "primary",
               size: "md",
-              src: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+              src: "https://i.pravatar.cc/150?img=33",
             }}
             className="transition-transform"
             description="@tonyreichert"

@@ -81,7 +81,7 @@ const ShapesTemplate = (args: BadgeProps) => (
       <Avatar isBordered radius="lg" src="https://i.pravatar.cc/150?u=a042f81f4e29026024d" />
     </Badge>
     <Badge {...args} shape="circle">
-      <Avatar isBordered radius="full" src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
+      <Avatar isBordered radius="full" src="https://i.pravatar.cc/150?img=40" />
     </Badge>
   </div>
 );

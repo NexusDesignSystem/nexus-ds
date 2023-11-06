@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nexus-design-system.vecel.app
+
+# Sitemaps
+Sitemap: https://nexus-design-system.vecel.app/sitemap.xml

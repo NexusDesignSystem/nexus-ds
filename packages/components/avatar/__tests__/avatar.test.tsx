@@ -29,19 +29,19 @@ describe("Avatar", () => {
   });
 
   it("should render initials", () => {
-    const {container} = render(<Avatar name="Junior" />);
+    const {container} = render(<Avatar name="DeltaS" />);
 
     expect(container.querySelector("span")).toHaveTextContent("Jun");
   });
 
   it('should work with custom "getInitials" function', () => {
-    const {container} = render(<Avatar getInitials={(name) => name.charAt(0)} name="Junior" />);
+    const {container} = render(<Avatar getInitials={(name) => name.charAt(0)} name="DeltaS" />);
 
     expect(container.querySelector("span")).toHaveTextContent("J");
   });
 
   it('should be focusable if "isFocusable" is true', () => {
-    const {container} = render(<Avatar isFocusable name="Junior" />);
+    const {container} = render(<Avatar isFocusable name="DeltaS" />);
     const avatar = container.querySelector("span");
 
     expect(avatar).toHaveAttribute("tabIndex", "0");
@@ -63,14 +63,14 @@ describe("Avatar - fallback + loading strategy", () => {
 
     mock.simulate("loaded");
     const wrapper = render(
-      <Avatar name="Junior" src="https://avatars.githubusercontent.com/u/30373425" />,
+      <Avatar name="DeltaS" src="https://avatars.githubusercontent.com/u/87353374" />,
     );
 
     act(() => {
       jest.runAllTimers();
     });
 
-    const img = wrapper.getByAltText("Junior");
+    const img = wrapper.getByAltText("DeltaS");
 
     expect(img).toBeInTheDocument();
   });
@@ -80,8 +80,8 @@ describe("Avatar - fallback + loading strategy", () => {
 
     mock.simulate("error");
 
-    const src = "https://avatars.githubusercontent.com/u/30373425";
-    const name = "Junior";
+    const src = "https://avatars.githubusercontent.com/u/87353374";
+    const name = "DeltaS";
     const onErrorFn = jest.fn();
 
     render(<Avatar name={name} src={src} onError={onErrorFn} />);
@@ -94,7 +94,7 @@ describe("Avatar - fallback + loading strategy", () => {
   });
 
   test("should render a name avatar if no src", () => {
-    const {container} = render(<Avatar name="Junior" />);
+    const {container} = render(<Avatar name="DeltaS" />);
 
     expect(container.querySelector("span")).toHaveTextContent("Jun");
   });

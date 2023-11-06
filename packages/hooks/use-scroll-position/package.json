@@ -1,6 +1,6 @@
 {
   "name": "@nexus-ds/use-scroll-position",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Provides the logic to control the scroll over an element",
   "keywords": [
     "use-scroll-position"
@@ -16,11 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NexusDesignSystem/nexusUI.git",
+    "url": "git+https://github.com/NexusDesignSystem/nexus-ds.git",
     "directory": "packages/hooks/use-scroll-position"
   },
   "bugs": {
-    "url": "https://github.com/NexusDesignSystem/nexusUI/issues"
+    "url": "https://github.com/NexusDesignSystem/nexus-ds/issues"
   },
   "scripts": {
     "build": "tsup src --dts",
