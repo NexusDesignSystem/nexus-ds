@@ -26,7 +26,7 @@ export const SmallLogo: React.FC<LogoProps> = ({
 export const LargeLogo: React.FC<LogoProps> = ({auto, className, ...props}) => (
   <img
   src="https://nexus-design-system.vercel.app/large-logo.png"
-  width={48}
+  width={88}
   
   />
 );
