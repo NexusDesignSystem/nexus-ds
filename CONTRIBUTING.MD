@@ -4,11 +4,7 @@ Hello!, I am very excited that you are interested in contributing with Nexus Des
 
 - [Extraction request guidelines](#pull-request-guidelines)
 - [Development Setup](#development-setup)
-- [Tests](#tests)
-- [Visual Changes](#visual-changes)
-- [Documentation](#documentation)
-- [Breaking Changes](#breaking-changes)
-- [Becoming a maintainer](#becoming-a-maintainer)
+
 
 ### Tooling
 
