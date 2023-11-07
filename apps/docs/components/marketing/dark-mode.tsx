@@ -25,12 +25,12 @@ export const DarkMode = () => {
     <section className={sectionWrapper({class: "mt-16 lg:mt-44"})}>
       <div className="flex flex-col gap-8">
         <div>
-          <div className={titleWrapper()}>
-            <h1 className={title({size: "lg"})}>Dark mode</h1>
-            <div>
-              <h1 className={title({size: "lg"})}>is&nbsp;</h1>
-              <h1 className={title({color: "yellow", size: "lg"})}>effortless.</h1>
-            </div>
+          <div className={titleWrapper({class: "inline md:block"})}>
+            <h1 className={title({size: "lg"})}>Seemless </h1>
+            <h1 className={title({color: "yellow", size: "lg"})}>Dark Mode</h1>
+            {/* <div> */}
+              {/* <h1 className={title({size: "lg"})}>dark mode&nbsp;</h1> */}
+            {/* </div> */}
           </div>
           <p className={subtitle()}>
             Nexus Design System comes with a fully well-scaled default dark theme that you can apply to your

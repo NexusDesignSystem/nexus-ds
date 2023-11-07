@@ -55,7 +55,7 @@ const themesTabs = (isMobile: boolean) => [
   },
 ];
 
-type Theme = "nexusui" | "modern" | "elegant" | "retro";
+type Theme = "nexus" | "modern" | "elegant" | "retro";
 type Tab = {id: string; title: () => JSX.Element; icon: () => JSX.Element};
 
 const itemSizes = ["xs", "s", "m", "l", "xl"];
@@ -171,7 +171,7 @@ const CustomThemesExample = ({
               <Button
                 className={slots.buyButton()}
                 color="primary"
-                variant={selectedTheme === "nexusui" ? "shadow" : "solid"}
+                variant={selectedTheme === "nexus" ? "shadow" : "solid"}
               >
                 Buy now
               </Button>
@@ -224,12 +224,9 @@ export const CustomThemes = () => {
     <section className={sectionWrapper({class: "mt-24 lg:mt-56"})}>
       <div className="flex flex-col gap-8">
         <div>
-          <div className={titleWrapper()}>
-            <h1 className={title({size: "lg"})}>Apply your own</h1>
-            <div>
-              <h1 className={title({color: "blue", size: "lg"})}>theming&nbsp;</h1>
-              <h1 className={title({size: "lg"})}>decisions.</h1>
-            </div>
+          <div className={titleWrapper({class: "inline md:block"})}>
+            <h1 className={title({size: "lg"})}>Apply custom </h1>
+              <h1 className={title({color: "blue", size: "lg"})}>Themes&nbsp;</h1>
           </div>
           <p className={subtitle()}>
             Nexus Design System provides a custom TailwindCSS plugin that allows you to customize the default

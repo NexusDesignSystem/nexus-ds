@@ -213,7 +213,7 @@ const CustomButton = () => {
       size="lg"
       onPress={handleConfetti}
     >
-      Press me
+      Confetti Time
     </Button>
   );
 };

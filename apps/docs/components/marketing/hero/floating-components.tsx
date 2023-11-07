@@ -10,19 +10,20 @@ import {
   Spinner,
   Pagination,
 } from "@nexus-ds/react";
-import {MoonFilledIcon, SunFilledIcon} from "@nexus-ds/shared-icons";
-import {useTheme} from "next-themes";
+import { MoonFilledIcon, SunFilledIcon } from "@nexus-ds/shared-icons";
+import { useTheme } from "next-themes";
 import NextImage from "next/image";
+import { motion } from "framer-motion";
 
-import {FloatingTabs} from "./floating-tabs";
-
-import {UserTwitterCard} from "@/components/demos/user-twitter-card";
-import {useIsMounted} from "@/hooks/use-is-mounted";
-import {useMediaQuery} from "@/hooks/use-media-query";
-import {NexusLogo} from "@/components/nexusui-logo";
+import { FloatingTabs } from "./floating-tabs";
+import Globe from "./globe";
+import { UserTwitterCard } from "@/components/demos/user-twitter-card";
+import { useIsMounted } from "@/hooks/use-is-mounted";
+import { useMediaQuery } from "@/hooks/use-media-query";
+import { NexusLogo } from "@/components/nexusui-logo";
 
 export const FloatingComponents: React.FC<{}> = () => {
-  const {theme, setTheme} = useTheme();
+  const { theme, setTheme } = useTheme();
 
   const isMounted = useIsMounted();
   const isSelected = theme === "dark" && isMounted;
@@ -34,132 +35,140 @@ export const FloatingComponents: React.FC<{}> = () => {
   };
 
   return (
-    <div className="hidden lg:flex flex-col relative z-20 w-1/2">
-      <>
-        <Switch
-          classNames={{
-            base: "absolute -top-[220px] -right-[40px] animate-[levitate_13s_ease_infinite_1s_reverse]",
-            wrapper: "shadow-sm",
-            startContent: "text-white",
-          }}
-          endContent={<MoonFilledIcon />}
-          isSelected={isSelected}
-          size="lg"
-          startContent={<SunFilledIcon />}
-          onChange={onChange}
-        />
+    <>
 
-        <Input
-          className="absolute -top-[130px] -right-[120px] animate-[levitate_10s_ease_infinite] w-[200px]"
-          color="secondary"
-          defaultValue="Nexus Design System"
-          label="Input"
-          labelPlacement="outside"
-          variant="bordered"
-          onClear={() => {}}
-        />
+      <div className="hidden lg:flex flex-col w-1/2 ">
 
-        <Card
-          isFooterBlurred
-          className="absolute -top-[260px] right-[100px] h-[120px] animate-[levitate_12s_ease_infinite_1s] z-0 max-w-fit"
-        >
-          <Image
-            alt="Professional camera"
-            as={NextImage}
-            className="object-cover -translate-y-12 h-[100%]"
-            height={120}
-            src="/images/card-example-6.webp"
-            width={120}
-          />
-          <CardFooter className="before:bg-black/10 border-white/20 border-1 overflow-hidden justify-between py-2 absolute before:rounded-xl rounded-xl bottom-1 w-[calc(100%_-_8px)] shadow-lg ml-1 z-10">
-            <p className="text-xs font-semibold text-white/80">Delta</p>
-            <p className="text-xs font-semibold text-white/80">Shadow</p>
-          </CardFooter>
-        </Card>
-
-        <FloatingTabs />
-
-        <UserTwitterCard className="absolute left-[80px] -top-[80px] animate-[levitate_16s_ease_infinite] border-none" />
-
-        <Card
-          className="absolute right-[110px] -top-[60px] animate-[levitate_18s_ease_infinite] z-10 max-w-fit border-none"
-          shadow="lg"
-        >
-          <CardBody>
-            <NexusLogo small size={60} />
-          </CardBody>
-        </Card>
-
-        <div className="absolute z-10 -top-[40px] -right-[230px] animate-[levitate_14s_ease_infinite_1s]">
-          <Pagination
-            isCompact
-            showControls
-            showShadow
+        <div className="hidden lg:flex z-40 relative -bottom-[290px] -left-[100px] ">
+          <Switch
             classNames={{
-              base: "rounded-xl",
+              base: "absolute -top-[220px] -right-[40px] animate-[levitate_13s_ease_infinite_1s_reverse]",
+              wrapper: "shadow-sm",
+              startContent: "text-white",
             }}
-            initialPage={6}
-            total={10}
+            endContent={<MoonFilledIcon />}
+            isSelected={isSelected}
+            size="lg"
+            startContent={<SunFilledIcon />}
+            onChange={onChange}
           />
-        </div>
 
-        {isMounted && (
-          <Tooltip
-            className="text-sm animate-[levitate_14s_ease_infinite]"
+          <Input
+            className="absolute -top-[130px] -right-[120px] animate-[levitate_10s_ease_infinite] w-[200px]"
             color="primary"
-            content="Nexus is the Best!"
-            isOpen={!isTablet}
-            placement="top"
-            style={{
-              zIndex: 39,
-            }}
-          >
-            <Button
-              className="absolute left-[200px] top-[160px] max-w-fit animate-[levitate_14s_ease_infinite_0.5s]"
-              color="success"
-              size="sm"
-              variant="flat"
-            >
-              Tooltip
-            </Button>
-          </Tooltip>
-        )}
-
-        <Card
-          className="absolute right-[10px] top-[30px] animate-[levitate_16s_ease_infinite] z-10 max-w-fit border-none"
-          shadow="lg"
-        >
-          <CardBody>
-            <Spinner color="primary" size="lg" />
-          </CardBody>
-        </Card>
-
-        <Card
-          isFooterBlurred
-          className="absolute right-[60px] top-[100px] animate-[levitate_12s_ease_infinite_1s] z-0 max-w-fit"
-        >
-          <Image
-            alt="Depths of Cyan"
-            as={NextImage}
-            className="object-cover"
-            height={200}
-            src="/images/hero-card.webp"
-            width={200}
+            defaultValue="Nexus Design System"
+            labelPlacement="outside"
+            variant="faded"
+            onClear={() => { }}
           />
-          <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-            <p className="text-tiny text-white/80">Depths of Cyan.</p>
-            <Button
-              className="text-tiny text-white bg-black/20"
-              color="default"
-              radius="lg"
-              size="sm"
-              variant="flat"
+
+          {/* <Card
+            isFooterBlurred
+            className="absolute -top-[260px] right-[100px] h-[120px] animate-[levitate_12s_ease_infinite_1s] z-0 max-w-fit"
+          >
+            <Image
+              alt="Professional camera"
+              as={NextImage}
+              className="object-cover -translate-y-12 h-[100%]"
+              height={120}
+              src="/images/card-example-6.webp"
+              width={120}
+            />
+            <CardFooter className="before:bg-black/10 border-white/20 border-1 overflow-hidden justify-between py-2 absolute before:rounded-xl rounded-xl bottom-1 w-[calc(100%_-_8px)] shadow-lg ml-1 z-10">
+              <p className="text-xs font-semibold text-white/80">Delta</p>
+              <p className="text-xs font-semibold text-white/80">Shadow</p>
+            </CardFooter>
+          </Card> */}
+
+          <FloatingTabs />
+
+          <UserTwitterCard className="absolute left-[80px] -top-[80px] animate-[levitate_16s_ease_infinite] border-none" />
+
+          <Card
+            className="absolute right-[110px] -top-[60px] animate-[levitate_18s_ease_infinite] z-10 max-w-fit border-none"
+            shadow="lg"
+            
+          >
+            <CardBody>
+              <NexusLogo small size={60} />
+            </CardBody>
+          </Card>
+
+          {/* <div className="absolute z-10 -top-[40px] -right-[230px] animate-[levitate_14s_ease_infinite_1s]">
+            <Pagination
+              isCompact
+              showControls
+              showShadow
+              classNames={{
+                base: "rounded-xl",
+              }}
+              initialPage={6}
+              total={10}
+            />
+          </div> */}
+
+          {isMounted && (
+            <Tooltip
+              className="text-md animate-[levitate_14s_ease_infinite]"
+              color="primary"
+              content="Nexus is the Best!"
+              isOpen={!isTablet}
+              placement="top"
+              style={{
+                zIndex: 39,
+              }}
             >
-              Explore
-            </Button>
-          </CardFooter>
-        </Card>
-      </>
-    </div>
+              {/* <Button
+                className="absolute left-[200px] top-[160px] max-w-fit animate-[levitate_14s_ease_infinite_0.5s]"
+                color="success"
+                size="md"
+                variant="shadow"
+              >
+                Hover Here
+              </Button> */}
+            </Tooltip>
+          )}
+
+          <Card
+            className="absolute right-[10px] top-[30px] animate-[levitate_16s_ease_infinite] z-10 max-w-fit border-none"
+            shadow="lg"
+          >
+            <CardBody>
+              <Spinner color="primary" size="lg" />
+            </CardBody>
+          </Card>
+
+          <Card
+            isFooterBlurred
+            className="absolute right-[60px] top-[100px] animate-[levitate_12s_ease_infinite_1s] z-0 max-w-fit"
+          >
+            <Image
+              alt="Depths of Cyan"
+              as={NextImage}
+              className="object-cover"
+              height={100}
+              src="/images/hero-card.jpeg"
+              width={200}
+            />
+            <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+              <p className="text-tiny text-white/80">Depths of Cyan.</p>
+              <Button
+                className="text-tiny text-white bg-black/20"
+                color="default"
+                radius="lg"
+                size="sm"
+                variant="flat"
+              >
+                Explore
+              </Button>
+            </CardFooter>
+          </Card>
+
+        </div>
+        <div className="hidden lg:flex z-20 dark:z-0 -right-[100px]">
+          <Globe />
+        </div>
+      </div>
+    </>
   );
 };

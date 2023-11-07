@@ -16,10 +16,10 @@ export const Customization = () => {
       <div className="flex flex-col gap-8">
         <div>
           <div className={titleWrapper({class: "inline md:block"})}>
-            <h1 className={title({size: "lg"})}>Customization made</h1>
-            <div>
-              <h1 className={title({size: "lg", color: "pink"})}>easy.</h1>
-            </div>
+            <h1 className={title({size: "lg"})}>Easy to</h1>
+            
+              <h1 className={title({size: "lg", color: "pink"})}> Customize.</h1>
+            {/* </div> */}
           </div>
           <p className={subtitle()}>
             Nexus Design System is based on{" "}

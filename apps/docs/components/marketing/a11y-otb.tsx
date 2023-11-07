@@ -93,12 +93,12 @@ export const A11yOtb = () => {
     <section className={sectionWrapper({class: "z-20 mt-16 lg:mt-44"})}>
       <div className="flex flex-col gap-8">
         <div>
-          <div className={titleWrapper()}>
-            <h1 className={title({size: "lg"})}>Accessibility</h1>
-            <div>
-              <h1 className={title({color: "green", size: "lg"})}>out of the&nbsp;</h1>
-              <h1 className={title({size: "lg"})}>box.</h1>
-            </div>
+          <div className={titleWrapper({class: "inline md:block"})}>
+            <h1 className={title({size: "lg"})}>Ease of </h1>
+              <h1 className={title({color: "green", size: "lg"})}> &nbsp;Access</h1>
+            {/* <div> */}
+              {/* <h1 className={title({color: "green", size: "lg"})}>out of the&nbsp;</h1> */}
+            {/* </div> */}
           </div>
           <p className={subtitle()}>
             Nexus Design System components are built on top of&nbsp;

@@ -211,7 +211,7 @@ export const shopCartStyles = tv({
     },
   },
   defaultVariants: {
-    theme: "nexusui",
+    theme: "nexus",
   },
 });
 

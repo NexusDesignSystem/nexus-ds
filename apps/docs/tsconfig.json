@@ -25,6 +25,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".contentlayer/generated"
-  ],
+, "components/marketing/hero/globe.jsx"  ],
   "exclude": ["node_modules", "next-redirect.js"]
 }
