@@ -24,7 +24,7 @@ export const Hero = () => {
             <h1 className={title()}>Develop&nbsp;</h1>
             <h1 className={title({color: "blue"})}>beautiful&nbsp;</h1>
           </div>
-          <h1 className={title()}>websites effortlessly.</h1>
+          <h1 className={title()}>  websites effortlessly.</h1>
         </div>
         <h2 className={subtitle({fullWidth: true, class: "text-center md:text-left"})}>
           The ultimate modern design system.
